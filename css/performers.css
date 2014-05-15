@@ -1,0 +1,22 @@
+#calendar {
+	height: 600px;
+	width: 100%;
+}
+
+.row::before {
+	display: block;
+	content: " ";
+	visibility: hidden;
+}
+
+.row {
+	margin-bottom: 50px;
+}
+
+
+@media(min-width:768) {
+	.row::before {
+		margin-top: -40px;
+		height: 40px;
+	}
+}
