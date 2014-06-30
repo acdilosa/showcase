@@ -15,7 +15,7 @@ def performers_page():
 
 @app.route('/dvds')
 def dvds_page():
-	return "Not Implemented"
+	return render_template('dvds.html')
 
 @app.route('/program')
 def program_page():
