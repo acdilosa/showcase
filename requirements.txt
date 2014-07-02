@@ -1,0 +1,16 @@
+Flask==0.10.1
+Flask-Script==2.0.5
+Jinja2==2.7.3
+MarkupSafe==0.23
+PyYAML==3.11
+Werkzeug==0.9.6
+argh==0.24.1
+argparse==1.2.1
+flup==1.0.2
+gunicorn==19.0.0
+itsdangerous==0.24
+meld3==1.0.0
+pathtools==0.1.2
+supervisor==3.0
+watchdog==0.7.1
+wsgiref==0.1.2
