@@ -1,3 +1,3 @@
 DEBUG = False
 BCRYPT_LEVEL = 14
-
+SQLALCHEMY_ECHO = False
