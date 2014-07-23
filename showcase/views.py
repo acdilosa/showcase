@@ -18,17 +18,20 @@ def tickets_page():
 def performers_page():
 	return render_template('performers.html')
 
-@app.route('/dvds')
-def dvds_page():
-	return render_template('dvds.html')
+@app.route('/merchandize')
+def merchandize_page():
+	return render_template('merchandize.html')
 
 @app.route('/program')
 def program_page():
 	return render_template('program.html')
 
+@app.route('/<path:filename>')  
+def send_file(filename):  
+      return send_from_directory('/showcase/static/js/vendor/pdfviewer/web/', 'filename')
+    
 
-
-#
+#s
 #  Account Functions
 #
 
