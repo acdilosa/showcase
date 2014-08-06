@@ -5,33 +5,35 @@ from . import app, db
 from .models import *
 from .forms import *
 
+#customers
+
 @app.route('/')
-def home_page():
-	return render_template('home.html', user=current_user)
+def customer_home_page():
+	return render_template('customers/customer_home.html', user=current_user)
 
 @app.route('/tickets')
 def tickets_page():
-	return render_template('tickets.html')
+	return render_template('customers/tickets.html')
 
-@app.route('/performers')
-#@login_required
-def performers_page():
-	return render_template('performers.html')
-
-@app.route('/merchandize')
-def merchandize_page():
-	return render_template('merchandize.html')
+@app.route('/dvds')
+def dvds_page():
+	return render_template('customers/dvds.html')
 
 @app.route('/program')
 def program_page():
-	return render_template('program.html')
+	return render_template('customers/program.html')
 
-@app.route('/<path:filename>')  
-def send_file(filename):  
-      return send_from_directory('/showcase/static/js/vendor/pdfviewer/web/', 'filename')
-    
+#performers
 
-#s
+
+@app.route('/performers')
+#@login_required
+def performer_home_page():
+    return render_template('performers/performer_home.html')
+
+
+
+#
 #  Account Functions
 #
 
