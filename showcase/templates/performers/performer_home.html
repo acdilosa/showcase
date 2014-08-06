@@ -1,7 +1,8 @@
 {% extends 'performers/layout.html' %}
 
 
-{% block css %}
+{% block styles %}
+  {{ super() }}
   <link href="{{ url_for('static', filename='css/performers.css') }}" rel="stylesheet">
 {% endblock %}
 
