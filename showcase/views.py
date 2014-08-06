@@ -28,8 +28,8 @@ def program_page():
 
 @app.route('/performers')
 #@login_required
-def performer_home_page():
-    return render_template('performers/performer_home.html')
+def schedule_page():
+    return render_template('performers/schedule.html')
 
 
 

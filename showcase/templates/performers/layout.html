@@ -1,5 +1,9 @@
 {% extends 'layout.html' %}
 
+{% block styles %}
+  {{ super() }}
+{% endblock %}
+
 {% block navbar %}
   <div class="navbar-wrapper">
     <div class="container">
@@ -16,7 +20,7 @@
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="{{ url_for('performer_home_page') }}">Home</a></li>
+              <li class="active"><a href="{{ url_for('schedule_page') }}">Schedule</a></li>
              
             </ul>
             <ul class="nav navbar-nav navbar-right">

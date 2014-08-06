@@ -1,0 +1,47 @@
+{% extends 'performers/layout.html' %}
+
+{% block styles %}
+  {{ super() }}
+  <link href="{{ url_for('static', filename='css/performers.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+ 
+    <div class="container marketing">
+
+      <div id="schedule" class="row">
+        <div class="col-xs-12">
+          <div class="page-header"><h2>Schedule</h2></div>
+        </div>
+        <div class="col-xs-12 col-md-7">
+          <iframe id="calendar" src="http://www.google.com/calendar/embed?src=adam%40dilosa.com&ctz=America/New_York" style="border: 0" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <h3>Reminders</h3>
+          <ul>
+            <li>Leadership Meetings</li>
+            <ul>
+              <li>May 27th</li>
+              <li>June 2nd</li>
+              <li>June 9th</li>
+            </ul>
+            <li>Note 1</li>
+            <li>Note 2</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <!--<footer>
+        <p class="pull-right"><a href="http://getbootstrap.com/examples/carousel/#">Back to top</a></p>
+        <p>© 2014 Company, Inc. · <a href="http://getbootstrap.com/examples/carousel/#">Privacy</a> · <a href="http://getbootstrap.com/examples/carousel/#">Terms</a></p>
+      </footer> -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+{% endblock %}
