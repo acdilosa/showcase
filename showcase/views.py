@@ -31,6 +31,17 @@ def program_page():
 def schedule_page():
     return render_template('performers/schedule.html')
 
+@app.route('/scores')
+#@login_required
+def scores_page():
+    return render_template('performers/scores.html')
+
+@app.route('/auditions')
+#@login_required
+def auditions_page():
+    return render_template('performers/auditions.html')
+
+
 
 
 #

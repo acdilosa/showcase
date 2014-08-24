@@ -3,3 +3,4 @@ instance/
 showcase.pid
 showcase/static/img/
 showcase/static/video
+showcase/static/scores

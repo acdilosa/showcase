@@ -1,0 +1,70 @@
+{% extends 'performers/layout.html' %}
+
+{% block styles %}
+  {{ super() }}
+  <link href="{{ url_for('static', filename='css/performers.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+  
+    <div class="container marketing">
+      <div id="schedule" class="row">
+        <div class="col-xs-12">
+          <div class="page-header"><h2>Schedule</h2></div>
+
+     <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Visual Artists - 3rd week of school</h3>
+        </div>
+        <div class="panel-body">
+          Information will be available as it is decided.
+        </div>
+      </div>  
+
+     <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Vocal/Lead - 4th week of school</h3>
+        </div>
+        <div class="panel-body">
+          Information will be available as it is decided.
+        </div>
+      </div>  
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Band - 6th week of school</h3>
+        </div>
+        <div class="panel-body">
+          <ul>
+            <li>2 Arrangements from composers</li>
+            <li>3 songs from vocal auditions</li>
+          </ul>
+        </div>
+      </div>  
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Dance</h3>
+        </div>
+        <div class="panel-body">
+          <ul>
+            <li><a href="http://www.youtube.com/watch?v=oWDxLxFFpZY" target="_blank">Irish step dancing</a></li>
+            <li><a href="http://www.learntodance.com/online%20irish%20dancing%20lesson.htm" target="_blank">Irish step dancing</a></li>
+          </ul>
+        </div>
+      </div> 
+    </div> 
+      <!-- FOOTER -->
+      <!--<footer>
+        <p class="pull-right"><a href="http://getbootstrap.com/examples/carousel/#">Back to top</a></p>
+        <p>© 2014 Company, Inc. · <a href="http://getbootstrap.com/examples/carousel/#">Privacy</a> · <a href="http://getbootstrap.com/examples/carousel/#">Terms</a></p>
+      </footer> -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+{% endblock %}
