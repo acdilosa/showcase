@@ -5,6 +5,8 @@ from . import app, db
 from .models import *
 from .forms import *
 
+import os
+
 #customers
 
 @app.route('/')
@@ -34,7 +36,9 @@ def schedule_page():
 @app.route('/scores')
 #@login_required
 def scores_page():
-    return render_template('performers/scores.html')
+    scores_dir = "showcase/static/scores/"
+    scores = {folder:os.listdir(scores_dir + folder) for folder in os.listdir(scores_dir)}
+    return render_template('performers/scores.html', scores=scores)
 
 @app.route('/auditions')
 #@login_required
