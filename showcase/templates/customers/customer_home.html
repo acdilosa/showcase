@@ -3,6 +3,7 @@
 {% block styles %}
   {{ super() }}
   <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet" type="text/css"></link>
+   <link href="{{ url_for('static', filename='css/customer_home.css') }}" rel="stylesheet" type="text/css"></link>
 {% endblock %}
 
 {% block content %}
@@ -123,5 +124,7 @@
           <p>Rewatch the show anytime! DVDs will be available for sale soon after the show. Check back here for purchase information. </p>
           <p><a class="btn btn-default" href="{{ url_for('dvds_page') }}"" role="button">View details »</a></p>
         </div><!-- /.col-lg-4 -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 {% endblock %}
 
