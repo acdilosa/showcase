@@ -1,7 +1,23 @@
 
 
-.carousel {border: 1px solid black;}
+.carousel 
+{
+	border: 1px solid black;
+	margin-bottom: 5px;
+}
 
 .img
 {
+}
+
+iframe
+{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.video
+{
+	background-color: rgb(35, 31, 30);
+	margin-bottom: 15px;
 }
