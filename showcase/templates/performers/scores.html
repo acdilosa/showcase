@@ -21,16 +21,19 @@
 
 
 {% block inner_content %}
+    
     <div class="page-header"><h2 style="padding-top:15px;">Scores</h2></div>
 
     {% for score_name, score_files in scores.iteritems() %}
-    <div class="col-xs-12 col-sm-3">
+    <div class="col-xs-12">
         <h3>{{ score_name }}</h3>
         <ul>
             {% for score_file in score_files %}
-            <li>
-                <a href="{{ url_for('static', filename='scores/' + score_name + '/' + score_file) }}" target="_blank">{{ score_file[:-4] }}</a>
-            </li>
+            <div class="col-xs-3">
+                <li>
+                    <a href="{{ url_for('static', filename='scores/' + score_name + '/' + score_file) }}" target="_blank">{{ score_file[:-4] }}</a>
+                </li>
+            </div>
             {% endfor %}
         </ul>
     </div>
